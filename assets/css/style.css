@@ -410,27 +410,28 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  /* height: 80vh; */
-  background: url("../img/pic\ backgroung.PNG") top center;
+  height: 80vh;
+  background: rgba(255, 166, 0, 0.89);
   background-size: cover;
-  /* position: relative; */
-  margin: 5rem 0;
-  padding: 0 0 5rem 0;
-  /* background-attachment: fixed; */
+  position: relative;
+  /* margin: 5rem 0; */
+  /* padding: 0 0 5rem 0; */
+  background-attachment: fixed;
   /* background-color: thistle; */
 }
 .guruji-image {
-  width: 45%;
+  width: 100%;
+  margin-left: -4rem;
 }
 .guruji-image-div {
-  width: 43%;
+  width: 100%;
 }
 .guruji-logo {
-  width: 30%;
-  height: 25%;
+  max-width: 200px;
+  max-height: 80px;
 }
 
-#hero:before {
+/* #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.13);
   position: absolute;
@@ -439,16 +440,25 @@ h6 {
   left: 0;
   right: 0;
   background-attachment: fixed;
-}
+} */
 
 #hero .container {
-  padding: 20px 0 72px 0;
-  width: 30%;
+  padding: 30px 0 72px 0;
+  width: 50%;
 }
 
 @media (max-width: 992px) {
+  #hero {
+    padding-top: 10rem;
+    width: 100%;
+  }
   #hero .container {
-    padding-top: 62px;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0;
+  }
+  .guruji-image {
+    width: 20rem;
   }
 }
 
@@ -469,7 +479,7 @@ h6 {
 
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
@@ -482,22 +492,23 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: rgba(0, 0, 0, 0.589);
+  background: rgba(0, 0, 0, 0.918);
   border: 2px solid rgba(255, 166, 0, 0.89);
+  color: white;
 }
 
 @media (max-width: 1200px) {
-  #hero {
-    /* padding: 0 0 5rem 0; */
+  /* #hero {
+    padding: 0 0 5rem 0;
     background-attachment: unset;
     margin: rem 0 3rem 0;
     width: 100%;
-  }
-  #hero h1 {
+  } */
+  /* #hero h1 {
     font-size: 30px;
     line-height: 1.2;
     margin-top: 1rem;
-  }
+  } */
   #hero .btn-get-started {
     font-size: 10px;
     background-color: white;
@@ -511,10 +522,14 @@ h6 {
 
 @media (max-width: 768px) {
   #hero {
+    /* width: 100%; */
     height: 100vh;
+    padding: 1rem 0 0 22.7%;
+    justify-content: center;
   }
   #hero h1 {
-    font-size: 28px;
+    padding-top: 62px;
+    font-size: 35px;
     line-height: 36px;
   }
   #hero h2 {
