@@ -59,6 +59,9 @@ h6 {
   background: #37423b;
   color: #fff;
 }
+.form-img {
+  width: 40%;
+}
 
 /*--------------------------------------------------------------
 # Preloader
@@ -407,24 +410,39 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
-  background: url("../img/hero-bg.jpg") top center;
+  /* height: 80vh; */
+  background: url("../img/pic\ backgroung.PNG") top center;
   background-size: cover;
-  position: relative;
+  /* position: relative; */
+  margin: 5rem 0;
+  padding: 0 0 5rem 0;
+  /* background-attachment: fixed; */
+  /* background-color: thistle; */
+}
+.guruji-image {
+  width: 45%;
+}
+.guruji-image-div {
+  width: 43%;
+}
+.guruji-logo {
+  width: 30%;
 }
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.13);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
+  background-attachment: fixed;
 }
 
 #hero .container {
-  padding-top: 72px;
+  padding: 20px 0 72px 0;
+  width: 30%;
 }
 
 @media (max-width: 992px) {
@@ -435,7 +453,7 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 500;
   line-height: 56px;
   color: #fff;
@@ -463,14 +481,31 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: rgba(255, 166, 0, 0.89);
+  background: rgba(0, 0, 0, 0.589);
   border: 2px solid rgba(255, 166, 0, 0.89);
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1200px) {
   #hero {
-    background-attachment: fixed;
+    /* padding: 0 0 5rem 0; */
+    background-attachment: unset;
+    margin: rem 0 3rem 0;
+    width: 100%;
   }
+  #hero h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-top: 1rem;
+  }
+  #hero .btn-get-started {
+    font-size: 10px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+  }
+  /* .get-started-btn {
+    font-size: 5px;
+  } */
 }
 
 @media (max-width: 768px) {
