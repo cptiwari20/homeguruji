@@ -32,11 +32,15 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center">
-        <h1 class="logo mr-auto"><a href="index.html">HomeGuruji</a></h1>
+        <div class="logo mr-auto">
+          <a href="index.html"
+            ><img class="guruji-logo" src="./assets/img/logo2.jpeg" alt=""
+          /></a>
+        </div>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-        <nav class="nav-menu d-none d-lg-block">
+        <!-- <nav class="nav-menu d-none d-lg-block">
           <ul>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -65,23 +69,22 @@
             </li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-        </nav>
+        </nav> -->
         <!-- .nav-menu -->
 
         <a href="form.html" class="get-started-btn"> BOOK FREE TRIAL CLASS</a>
       </div>
     </header>
     <!-- End Header -->
-    <div class="d-flex">
-      .img-div
-      <div class="container pt-5 mt-5">
+    <div class="row mx-5 pt-5">
+      <div class="container col-sm-12 col-md-6">
         <div class="card shadow mt-5">
           <div class="card-header">
             <h1>Book Free Demo Classes</h1>
             <p>Please Fill the Following Details.</p>
           </div>
           <div class="card-body">
-            <form class="form" action="/action_page.php">
+            <form id="bookDemoform" class="form" action="#">
               <div class="container">
                 <div class="form-group">
                   <label for="formName">Name</label>
@@ -112,9 +115,9 @@
                   <input
                     class="form-control mb-2"
                     id="mobileNumber"
-                    type="number"
-                    min="10"
-                    max="10"
+                    type="tel"
+                    minlength="10"
+                    maxlength="10"
                     placeholder="Enter Mobile Number"
                     name="number"
                     required
@@ -217,16 +220,116 @@
 
                 <div class="clearfix">
                   <button
-                    type="button"
+                    type="submit"
                     class="btn btn-block btn-warning text-white submit-button"
                   >
-                    SUBMIT
+                    <b>Book Now</b>
                   </button>
                   <!-- <button type="submit" class="signupbtn">Sign Up</button> -->
                 </div>
               </div>
             </form>
           </div>
+        </div>
+      </div>
+      <div class="container col-sm-12 col-md-6">
+        <div class="">
+          <!-- <img class="img-fluid" src="./assets/img/events-2.jpg" alt=""> -->
+
+          <!-- <section id="popular-courses" class="courses">-->
+            
+            <div class="row justify-content-center mx-5 form-image-container">
+              <div class="container pt-5"> 
+               <div class="">
+                 <h2>Courses</h2>
+                 <p>Popular Courses</p>
+               </div>
+              </div>
+              <div class="col-sm-12 d-flex align-items-stretch">
+                  <div class="course-item card">
+                    <img
+                      src="assets/img/course-1.jpg"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                    <div class="course-content card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-3"
+                      >
+                        <h4>Web Development</h4>
+                        <p class="price">$169</p>
+                      </div>
+    
+                      <h3><a href="course-details.html">Website Design</a></h3>
+                      <p>
+                        Et architecto provident deleniti facere repellat nobis iste.
+                        Id facere quia quae dolores dolorem tempore.
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- End Course Item-->
+    
+                <div
+                  class="col-sm-12 d-flex align-items-stretch mt-4 mt-md-0"
+                >
+                  <div class="course-item card">
+                    <img
+                      src="assets/img/course-2.jpg"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                    <div class="course-content card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-3"
+                      >
+                        <h4>Marketing</h4>
+                        <p class="price">$250</p>
+                      </div>
+    
+                      <h3>
+                        <a href="course-details.html">Search Engine Optimization</a>
+                      </h3>
+                      <p>
+                        Et architecto provident deleniti facere repellat nobis iste.
+                        Id facere quia quae dolores dolorem tempore.
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- End Course Item-->
+    
+                <div
+                  class="col-sm-12 d-flex align-items-stretch mt-4 mt-lg-0"
+                >
+                  <div class="course-item card">
+                    <img
+                      src="assets/img/course-3.jpg"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                    <div class="course-content card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center mb-3"
+                      >
+                        <h4>Content</h4>
+                        <p class="price">$180</p>
+                      </div>
+    
+                      <h3><a href="course-details.html">Copywriting</a></h3>
+                      <p>
+                        Et architecto provident deleniti facere repellat nobis iste.
+                        Id facere quia quae dolores dolorem tempore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Course Item-->
+              </div>
+            <!-- </div>
+          </section> -->
         </div>
       </div>
     </div>
@@ -237,7 +340,11 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>HomeGuruji</h3>
+              <div class="logo mr-auto">
+                <a href="index.html"
+                  ><img class="guruji-logo" src="./assets/img/logo2.jpeg" alt=""
+                /></a>
+              </div>
               <p>
                 A108 Adam Street <br />
                 New York, NY 535022<br />
@@ -294,7 +401,7 @@
               </ul>
             </div>
 
-            <div class="col-lg-4 col-md-6 footer-newsletter">
+            <div class="col-sm-12 footer-newsletter">
               <h4>Join Our Newsletter</h4>
               <p>
                 Tamen quem nulla quae legam multos aute sint culpa legam noster
@@ -376,7 +483,7 @@
           const { data } = await makeRequest(
             `https://us-central1-homeguruji-3edb8.cloudfunctions.net/getAllData`
           );
-          console.log({ data });
+          // console.log({ data });
           let subject = $("#subject");
           let dates = $("#date");
           let timeslot = $("#timeslot");
@@ -401,7 +508,9 @@
         }
       });
 
-      $(".submit-button").on("click", async function () {
+      $("#bookDemoform").submit(async function (e) {
+        e.preventDefault()
+        $('.submit-button').text('Please wait..')
         let address = $("#address").val();
         let email = $("#email").val();
         let name = $("#formName").val();
@@ -425,8 +534,11 @@
           const res = await makeRequest(
             `https://us-central1-homeguruji-3edb8.cloudfunctions.net/bookDemo?class=${selected_class}&subject=${subject}&date=${date}&timeslot=${timeslot}&parentPhoneNumber=${mobileNumber}&parentsEmailAddress=${email}&studentsFullName=${name}`
           );
-          console.log({ res });
+          // console.log({ res });
+
+          $('.submit-button').text('Please wait..')
           if (res.status) {
+            $('.submit-button').text('We have recieved your request!')
             return Swal.fire({
               title: "Success!",
               text: "Thank you!",
@@ -436,9 +548,18 @@
               window.location.href = "/";
             });
           }
+          $('.submit-button').text('Retry')
+          return Swal.fire({
+            title: "Error!",
+            text: "Unable to submit your form",
+            icon: "error",
+            confirmButtonText: "Retry",
+          });
+
 
           console.log(res);
         } catch (error) {
+          $('.submit-button').text('Retry')
           console.log(error);
           return Swal.fire({
             title: "Error!",

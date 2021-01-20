@@ -1616,3 +1616,14 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+
+/* Form Page*/
+
+.form-image-container{
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  width: 100%;
+  height: 920px;
+}
