@@ -410,26 +410,27 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  /* height: 80vh; */
-  background: url("../img/pic\ backgroung.PNG") top center;
+  height: 80vh;
+  background: rgba(255, 166, 0, 0.89);
   background-size: cover;
-  /* position: relative; */
+  position: relative;
   margin: 5rem 0;
   padding: 0 0 5rem 0;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   /* background-color: thistle; */
 }
 .guruji-image {
-  width: 45%;
+  width: 100%;
 }
 .guruji-image-div {
-  width: 43%;
+  width: 100%;
 }
 .guruji-logo {
-  width: 30%;
+  max-width: 200px;
+  max-height: 80px;
 }
 
-#hero:before {
+/* #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.13);
   position: absolute;
@@ -438,11 +439,11 @@ h6 {
   left: 0;
   right: 0;
   background-attachment: fixed;
-}
+} */
 
 #hero .container {
   padding: 20px 0 72px 0;
-  width: 30%;
+  width: 50%;
 }
 
 @media (max-width: 992px) {
@@ -468,7 +469,7 @@ h6 {
 
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
@@ -481,7 +482,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: rgba(0, 0, 0, 0.589);
+  background: rgba(0, 0, 0, 0.918);
   border: 2px solid rgba(255, 166, 0, 0.89);
 }
 
@@ -513,6 +514,7 @@ h6 {
     height: 100vh;
   }
   #hero h1 {
+    padding-top: 62px;
     font-size: 28px;
     line-height: 36px;
   }
