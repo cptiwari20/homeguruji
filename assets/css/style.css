@@ -418,10 +418,13 @@ h6 {
   /* padding: 0 0 5rem 0; */
   background-attachment: fixed;
   /* background-color: thistle; */
+  /* align-items: center; */
+  margin-top: 2rem;
 }
 .guruji-image {
-  width: 100%;
+  width: 110%;
   margin-left: -4rem;
+  /* margin-top: 1rem; */
 }
 .guruji-image-div {
   width: 100%;
@@ -444,7 +447,7 @@ h6 {
 
 #hero .container {
   padding: 30px 0 72px 0;
-  width: 50%;
+  width: 85%;
 }
 
 @media (max-width: 992px) {
@@ -463,7 +466,7 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0;
+  margin: 2rem 0 0 0;
   font-size: 44px;
   font-weight: 700;
   line-height: 56px;
@@ -524,7 +527,7 @@ h6 {
   #hero {
     /* width: 100%; */
     height: 100vh;
-    padding: 1rem 0 0 22.7%;
+    padding: 1rem 0 0 21%;
     justify-content: center;
   }
   #hero h1 {
@@ -1631,10 +1634,9 @@ section {
   text-decoration: none;
 }
 
-
 /* Form Page*/
 
-.form-image-container{
+.form-image-container {
   display: flex;
   overflow: auto;
   align-items: center;
