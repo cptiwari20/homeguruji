@@ -9,7 +9,8 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
   color: #444444;
 }
 
@@ -1668,7 +1669,7 @@ section {
 }
 
 .width {
-  height: 40vh;
+  height: 45vh;
   margin: 2rem 0;
   line-height: 1.5;
 }
@@ -1684,4 +1685,26 @@ section {
 }
 .testimonials .btn:hover {
   background-color: rgba(0, 0, 0, 0.747);
+}
+
+@media (max-width: 525px) {
+  .width {
+    height: 60vh;
+  }
+}
+.homeguruji-experience .row {
+  /* margin-top: 2rem; */
+  padding: 2rem;
+}
+.homeguruji-experience {
+  background-color: rgba(255, 166, 0, 0.89);
+  padding: 1.5rem 0;
+}
+.homeguruji-experience h2 {
+  text-align: center;
+  margin: 1rem 0 -1rem 0;
+}
+.top-boarder-radius {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
