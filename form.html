@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="form.css" /> -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Book a Demo</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <div class="logo mr-auto">
+          <a href="index.html"
+            ><img class="guruji-logo" src="./assets/img/logo2.jpeg" alt=""
+          /></a>
+        </div>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <!-- <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="trainers.html">Trainers</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li class="drop-down">
+              <a href="">Drop Down</a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="drop-down">
+                  <a href="#">Deep Drop Down</a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav> -->
+        <!-- .nav-menu -->
+
+        <a href="form.html" class="get-started-btn"> BOOK FREE TRIAL CLASS</a>
+      </div>
+    </header>
+    <!-- End Header -->
+    <div class="row mx-5 pt-5">
+      <div class="container col-sm-12 col-md-6">
+        <div class="card shadow mt-5">
+          <div class="card-header">
+            <h1>Book Free Demo Classes</h1>
+            <p>Please Fill the Following Details.</p>
+          </div>
+          <div class="card-body">
+            <form id="bookDemoform" class="form" action="#">
+              <div class="container">
+                <div class="form-group">
+                  <label for="formName">Name</label>
+                  <input
+                    class="form-control"
+                    id="formName"
+                    type="text"
+                    placeholder="Enter Name"
+                    name="name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    class="form-control mb-2"
+                    id="email"
+                    type="email"
+                    placeholder="Enter Email address"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="mobileNumber">Mobile Number</label>
+                  <input
+                    class="form-control mb-2"
+                    id="mobileNumber"
+                    type="tel"
+                    minlength="10"
+                    maxlength="10"
+                    placeholder="Enter Mobile Number"
+                    name="number"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="adress">Address</label>
+                  <input
+                    class="form-control mb-2"
+                    id="address"
+                    type="text"
+                    placeholder="Address"
+                    name="adrress"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="class"> Class</label>
+                  <select
+                    class="form-control mb-2"
+                    id="class"
+                    placeholder="Select Class"
+                    name="class"
+                    required
+                    class="mb-2"
+                  >
+                    <option value="1">1st</option>
+                    <option value="2">2nd</option>
+                    <option value="3">3rd</option>
+                    <option value="4">4th</option>
+                    <option value="5">5th</option>
+                    <option value="6">6th</option>
+                    <option value="7">7th</option>
+                    <option value="8">8th</option>
+                    <option value="9">9th</option>
+                    <option value="10">10th</option>
+                    <option value="11">11th</option>
+                    <option value="12">12th</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject Name</label>
+                  <select
+                    class="form-control mb-2"
+                    id="subject"
+                    placeholder="Select Subject"
+                    name="subject"
+                    required
+                    class="mb-2"
+                  >
+                    <option disabled>Select Option</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="date">Date</label>
+                  <select
+                    class="form-control mb-2"
+                    id="date"
+                    placeholder="Select date"
+                    name="date"
+                    required
+                    class="mb-2"
+                  >
+                    <option disabled>Select Option</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="timeslot">Timeslot</label>
+                  <select
+                    class="form-control mb-2"
+                    id="timeslot"
+                    placeholder="Select timeslot"
+                    name="timeslot"
+                    required
+                    class="mb-2"
+                  >
+                    <option disabled>Select Option</option>
+                  </select>
+                </div>
+
+                <!-- <label>
+              <input
+              class="form-control mb-2"
+                type="checkbox"
+                checked="checked"
+                name="remember"
+                style="margin-bottom: 15px"
+              />
+              Remember me
+            </label> -->
+
+                <!-- <p>
+              By creating an account you agree to our
+              <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+            </p> -->
+
+                <div class="clearfix">
+                  <button
+                    type="submit"
+                    class="btn btn-block btn-warning text-white submit-button"
+                  >
+                    <b>Book Now</b>
+                  </button>
+                  <!-- <button type="submit" class="signupbtn">Sign Up</button> -->
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container col-sm-12 col-md-6">
+        <div class="card shadow mt-5">
+          <!-- <img class="img-fluid" src="./assets/img/events-2.jpg" alt=""> -->
+
+          <!-- <section id="popular-courses" class="courses">-->
+            
+           <img src="./assets/img/demo.jpg"></img>
+                   
+                <!-- End Course Item-->
+              </div>
+            <!-- </div>
+          </section> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <div class="logo mr-auto">
+                <a href="index.html"
+                  ><img class="guruji-logo" src="./assets/img/logo2.jpeg" alt=""
+                /></a>
+              </div>
+              <p>
+                A108 Adam Street <br />
+                New York, NY 535022<br />
+                United States <br /><br />
+                <strong>Phone:</strong> +1 5589 55488 55<br />
+                <strong>Email:</strong> info@example.com<br />
+              </p>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-12 footer-newsletter">
+              <h4>Join Our Newsletter</h4>
+              <p>
+                Tamen quem nulla quae legam multos aute sint culpa legam noster
+                magna
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-md-flex py-4">
+        <div class="mr-md-auto text-center text-md-left">
+          <div class="copyright">
+            &copy; Copyright <strong><span>HomeGuruji</span></strong
+            >. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://Coffeetobusiness.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://Coffeetobusiness.com/HomeGuruji-free-education-bootstrap-theme/ -->
+            Designed by
+            <a href="https://Coffeetobusiness.com/">Coffeetobusiness</a>
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+      const showError = (name = "") => {
+        return Swal.fire({
+          title: "Error!",
+          text: "Unable to submit your form",
+          icon: "error",
+          confirmButtonText: "Retry",
+        });
+      };
+
+      async function makeRequest(url, method = "get") {
+        const config = {
+          method,
+          url,
+        };
+        return await axios(config);
+      }
+
+      const appendData = (mainElment, data = []) => {
+        data.forEach(function (value) {
+          mainElment.append(
+            $("<option></option>").attr("value", value).text(value)
+          );
+        });
+      };
+
+      $(document).ready(async function () {
+        console.log("onload");
+        try {
+          const { data } = await makeRequest(
+            `https://us-central1-homeguruji-3edb8.cloudfunctions.net/getAllData`
+          );
+          // console.log({ data });
+          let subject = $("#subject");
+          let dates = $("#date");
+          let timeslot = $("#timeslot");
+          appendData(subject, data.subjects);
+          appendData(dates, data.dates);
+
+          data.timeslots.forEach((value) => {
+            timeslot.append(
+              $("<option></option>")
+                .attr("value", value.id)
+                .text(value.data.startTime)
+            );
+          });
+        } catch (error) {
+          console.log(error);
+          // return  Swal.fire({
+          //   title: 'Error!',
+          //   text: 'Unable to submit your form',
+          //   icon: 'error',
+          //   confirmButtonText: 'Retry'
+          // })
+        }
+      });
+
+      $("#bookDemoform").submit(async function (e) {
+        e.preventDefault()
+        $('.submit-button').text('Please wait..')
+        let address = $("#address").val();
+        let email = $("#email").val();
+        let name = $("#formName").val();
+        let mobileNumber = $("#mobileNumber").val();
+        let subject = $("#subject").val();
+        let date = $("#date").val();
+        let timeslot = $("#timeslot").val();
+        let selected_class = $("#class").val();
+        console.log({
+          name,
+          email,
+          address,
+          mobileNumber,
+          selected_class,
+        });
+
+        if (!name || !email || !address || !mobileNumber || !selected_class)
+          return showError();
+
+        try {
+          const res = await makeRequest(
+            `https://us-central1-homeguruji-3edb8.cloudfunctions.net/bookDemo?class=${selected_class}&subject=${subject}&date=${date}&timeslot=${timeslot}&parentPhoneNumber=${mobileNumber}&parentsEmailAddress=${email}&studentsFullName=${name}`
+          );
+          // console.log({ res });
+
+          $('.submit-button').text('Please wait..')
+          if (res.status) {
+            $('.submit-button').text('We have recieved your request!')
+            return Swal.fire({
+              title: "Success!",
+              text: "Thank you!",
+              icon: "success",
+              confirmButtonText: "Ok",
+            }).then(() => {
+              window.location.href = "/";
+            });
+          }
+          $('.submit-button').text('Retry')
+          return Swal.fire({
+            title: "Error!",
+            text: "Unable to submit your form",
+            icon: "error",
+            confirmButtonText: "Retry",
+          });
+
+
+          console.log(res);
+        } catch (error) {
+          $('.submit-button').text('Retry')
+          console.log(error);
+          return Swal.fire({
+            title: "Error!",
+            text: "Unable to submit your form",
+            icon: "error",
+            confirmButtonText: "Retry",
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
