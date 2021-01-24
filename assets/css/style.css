@@ -238,24 +238,16 @@ h6 {
   padding-left: 5px;
 }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 5bd52df02b095e1224d1d35f7889d7c5c423f5a3
 .nav-menu .drop-down .drop-down ul {
   top: 0;
   left: calc(100% - 30px);
 }
 
-<<<<<<< HEAD
-.nav-menu a{
- text-align: center;
- font-weight: 600;
+.nav-menu a {
+  text-align: center;
+  font-weight: 600;
 }
 
-=======
->>>>>>> 5bd52df02b095e1224d1d35f7889d7c5c423f5a3
 .nav-menu .drop-down .drop-down:hover > ul {
   opacity: 1;
   top: 0;
@@ -289,21 +281,14 @@ h6 {
 .get-started-btn {
   margin-left: 22px;
   background: rgba(255, 187, 0, 0.89);
-<<<<<<< HEAD
   color: #000;
-=======
-  color: #fff;
->>>>>>> 5bd52df02b095e1224d1d35f7889d7c5c423f5a3
   border-radius: 50px;
   padding: 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 12px;
   display: inline-block;
-<<<<<<< HEAD
   font-weight: 700;
-=======
->>>>>>> 5bd52df02b095e1224d1d35f7889d7c5c423f5a3
 }
 
 .get-started-btn:hover {
@@ -444,11 +429,7 @@ h6 {
   margin-top: 2rem;
 }
 .guruji-image {
-<<<<<<< HEAD
   width: 115%;
-=======
-  width: 110%;
->>>>>>> 5bd52df02b095e1224d1d35f7889d7c5c423f5a3
   margin-left: -4rem;
   /* margin-top: 1rem; */
 }
@@ -457,19 +438,15 @@ h6 {
 }
 .guruji-logo {
   max-width: 200px;
-<<<<<<< HEAD
   max-height: 180px;
 }
 
-.subjects-title{
+.subjects-title {
   font-weight: 700;
   text-align: center;
   margin: auto;
   padding-bottom: 50px;
   color: #000;
-=======
-  max-height: 80px;
->>>>>>> 5bd52df02b095e1224d1d35f7889d7c5c423f5a3
 }
 
 /* #hero:before {
@@ -505,15 +482,9 @@ h6 {
 
 #hero h1 {
   margin: 2rem 0 0 0;
-<<<<<<< HEAD
   font-size: 70px;
   font-weight: 700;
   line-height: 100px;
-=======
-  font-size: 44px;
-  font-weight: 700;
-  line-height: 56px;
->>>>>>> 5bd52df02b095e1224d1d35f7889d7c5c423f5a3
   color: #fff;
   font-family: "Poppins", sans-serif;
 }
@@ -534,29 +505,20 @@ h6 {
   border-radius: 50px;
   transition: 0.5s;
   margin-top: 30px;
-<<<<<<< HEAD
   border: 2px solid rgb(0, 0, 0);
   color: #fff;
   background: black;
 }
 
-.subject-icon{
+.subject-icon {
   width: 45px;
   height: 45px;
   margin-right: 20px;
-=======
-  border: 2px solid #fff;
-  color: #fff;
->>>>>>> 5bd52df02b095e1224d1d35f7889d7c5c423f5a3
 }
 
 #hero .btn-get-started:hover {
   background: rgba(0, 0, 0, 0.918);
-<<<<<<< HEAD
-  border: 2px solid rgba(0, 0, 0, 0.0);
-=======
-  border: 2px solid rgba(255, 166, 0, 0.89);
->>>>>>> 5bd52df02b095e1224d1d35f7889d7c5c423f5a3
+  border: 2px solid rgba(0, 0, 0, 0);
   color: white;
 }
 
@@ -1767,3 +1729,66 @@ section {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
+
+/* new item */
+
+/* .new-container h1 {
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+.new-container {
+  padding: 2rem 0;
+}
+.second-h1 {
+  color: #00143e;
+}
+.content-new {
+  width: 70%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 3rem 0;
+}
+.content-new .row::before {
+  content: "";
+  background-color: rgba(255, 166, 0, 0.89);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: relative;
+  z-index: -1;
+  left: 3rem;
+  bottom: 0.5rem;
+}
+.content-new .row::after {
+  content: "";
+  background-color: rgba(255, 166, 0, 0.89);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: relative;
+  z-index: -1;
+  right: 22.9rem;
+  bottom: 0.5rem;
+}
+.new-content-2 .col-11 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  align-items: center;
+  padding-top: 0.2rem;
+}
+.new-content-2 span {
+  font-size: 1.5rem;
+  color: rgba(137, 43, 226, 0.63);
+  text-align: center;
+  font-weight: bold;
+}
+.new-content-2 .row {
+  padding: 0.5rem;
+}
+.new-content-2 .col-1 {
+  color: #00143e;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+} */
