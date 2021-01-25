@@ -78,8 +78,8 @@
     <!-- End Header -->
     <div class="row mx-5 pt-5">
       <div class="container col-sm-12 col-md-6">
-        <div class="card shadow mt-5">
-          <div class="card-header">
+        <div class="card shadow-lg my-5">
+          <div class="card-header bg-warning text-white">
             <h1>Book Free Demo Classes</h1>
             <p>Please Fill the Following Details.</p>
           </div>
@@ -221,7 +221,7 @@
                 <div class="clearfix">
                   <button
                     type="submit"
-                    class="btn btn-block btn-warning text-white submit-button"
+                    class="btn btn-block btn-warning text-white submit-button shadow"
                   >
                     <b>Book Now</b>
                   </button>
@@ -232,9 +232,9 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 mt-4">
+      <div class="col-sm-12 col-md-6 my-5 justify-content-center">
         <!-- <div class="card shadow mt-5"> -->
-          <img class="demo-page-img" src="./assets/img/demo_page_image.png"></img>
+          <img class="img-fluid shadow-lg" src="./assets/img/demo_page_image.png"></img>
           <!-- ////// -->
           <div class="new-container mt-1">
             <h1 class="first-h1">
@@ -499,8 +499,11 @@
           if (res.status) {
             $(".submit-button").text("We have recieved your request!");
             return Swal.fire({
-              title: "Success!",
-              text: "Thank you!",
+              title: "Booked Successfully!",
+              html: `
+                You have successfully booked your <b>${subject} class</b> 
+                on ${date}. 
+                <p>We will wait you to be in the class.</p>`,
               icon: "success",
               confirmButtonText: "Ok",
             }).then(() => {
