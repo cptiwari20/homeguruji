@@ -1737,6 +1737,22 @@ section {
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
+/* .new-container h1 {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+} */
+/* @media screen and (max-width: 1040px) {
+  .new-container h1 {
+    font-size: 1.5rem;
+  }
+  .container-new {
+    padding-left: 0;
+  }
+} */
 .new-container {
   /* padding: 2rem 0 0 4rem; */
   /* height: 80vh;  */
@@ -1811,6 +1827,12 @@ section {
 
   /* margin: 1rem 0 0 4rem; */
 }
+/* @media screen and (max-width: 1440px) {
+  .psedu-img {
+    height: 5rem;
+    /* width: 8rem; */
+  }
+} */
 .demo-right-content {
   width: 100%;
   /* margin: 1rem auto; */
