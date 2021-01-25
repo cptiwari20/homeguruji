@@ -232,18 +232,60 @@
           </div>
         </div>
       </div>
-      <div class="container col-sm-12 col-md-6">
-        <div class="card shadow mt-5">
-          <!-- <img class="img-fluid" src="./assets/img/events-2.jpg" alt=""> -->
-
-          <!-- <section id="popular-courses" class="courses">-->
-            
-           <img src="./assets/img/demo.jpg.png"></img>
-                   
-                <!-- End Course Item-->
+      <div class="col-sm-12 col-md-6 mt-4">
+        <!-- <div class="card shadow mt-5"> -->
+          <img class="demo-page-img" src="./assets/img/demo_page_image.png"></img>
+          <!-- ////// -->
+          <div class="new-container mt-1">
+            <h1 class="first-h1">
+              Not sure what our classes are <br />
+              like or what your kid will learn?
+            </h1>
+            <h1 class="second-h1">
+              <span style="display: block"
+                >Book a <span style="color: darkorange">FREE</span> Introductory
+                <br />
+                Class</span
+              >
+            </h1>
+            <div class="content-new">
+              <div class="row">
+                <div class="col-sm">
+                  Personal Interaction <br />
+                  with our teacher
+                </div>
+                <div class="col-sm">
+                  45 mins of <br />
+                  demo class
+                </div>
               </div>
-            <!-- </div>
-          </section> -->
+            </div>
+            <div class="new-content-2">
+              <div class="row">
+                <div class="col-2"><span>30</span> MINS</div>
+                <div class="col-10">
+                  Teaching Session with the child on your selected<br />
+                  subject.
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2"><span>10</span> MINS</div>
+                <div class="col-10">
+                  Information and orientation for the parent and <br />the
+                  student regarding the class
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2"><span>05</span> MINS</div>
+                <div class="col-10">
+                  Q&A and identification of next steps for <br />
+                  enrolment
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ///// -->
         </div>
       </div>
     </div>
@@ -256,7 +298,10 @@
             <div class="col-lg-3 col-md-6 footer-contact">
               <div class="logo mr-auto">
                 <a href="index.html"
-                  ><img class="guruji-logo" src="./assets/img/logo2.jpeg" alt=""
+                  ><img
+                    class="guruji-logo"
+                    src="./assets/img/logo2.jpeg"
+                    alt=""
                 /></a>
               </div>
               <p>
@@ -423,8 +468,8 @@
       });
 
       $("#bookDemoform").submit(async function (e) {
-        e.preventDefault()
-        $('.submit-button').text('Please wait..')
+        e.preventDefault();
+        $(".submit-button").text("Please wait..");
         let address = $("#address").val();
         let email = $("#email").val();
         let name = $("#formName").val();
@@ -450,9 +495,9 @@
           );
           // console.log({ res });
 
-          $('.submit-button').text('Please wait..')
+          $(".submit-button").text("Please wait..");
           if (res.status) {
-            $('.submit-button').text('We have recieved your request!')
+            $(".submit-button").text("We have recieved your request!");
             return Swal.fire({
               title: "Success!",
               text: "Thank you!",
@@ -462,7 +507,7 @@
               window.location.href = "/";
             });
           }
-          $('.submit-button').text('Retry')
+          $(".submit-button").text("Retry");
           return Swal.fire({
             title: "Error!",
             text: "Unable to submit your form",
@@ -470,10 +515,9 @@
             confirmButtonText: "Retry",
           });
 
-
           console.log(res);
         } catch (error) {
-          $('.submit-button').text('Retry')
+          $(".submit-button").text("Retry");
           console.log(error);
           return Swal.fire({
             title: "Error!",
