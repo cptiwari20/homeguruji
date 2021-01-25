@@ -514,8 +514,8 @@
           }
           $(".submit-button").text("Retry");
           return Swal.fire({
-            title: "Error!",
-            text: "Unable to submit your form",
+            title: "Sorry!",
+            text: "Oops!! We failed to submit your request. Please retry.",
             icon: "error",
             confirmButtonText: "Retry",
           });
@@ -525,8 +525,8 @@
           $(".submit-button").text("Retry");
           console.log(error);
           return Swal.fire({
-            title: "Error!",
-            text: "Unable to submit your form",
+            title: "Sorry!",
+            text: "Oops!! We failed to submit your request. Please retry.",
             icon: "error",
             confirmButtonText: "Retry",
           });
