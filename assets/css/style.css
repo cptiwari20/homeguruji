@@ -1827,13 +1827,26 @@ section {
 
   /* margin: 1rem 0 0 4rem; */
 }
-/* @media screen and (max-width: 1440px) {
-  .psedu-img {
-    height: 5rem;
-    /* width: 8rem; */
-  }
-} */
+
 .demo-right-content {
   width: 100%;
   /* margin: 1rem auto; */
+}
+.privacy-policy li,
+.privacy-policy p {
+  margin: 0.4rem 0;
+  font-size: 1.1rem;
+}
+.note {
+  padding: 3rem 0;
+}
+.privacy-policy h2 {
+  font-size: 1.6rem;
+  color: #111;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+.privacy-policy {
+  background-color: #cbd4cf;
+  padding: 3rem;
 }

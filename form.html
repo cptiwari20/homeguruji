@@ -27,6 +27,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
   </head>
   <body>
     <!-- ======= Header ======= -->
@@ -465,6 +466,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+   
+    
+
     <script>
       const showError = (name = "") => {
         return Swal.fire({
@@ -483,11 +487,15 @@
         return await axios(config);
       }
 
+//    
+
       const appendData = (mainElment, data = []) => {
         data.forEach(function (value) {
+         
           mainElment.append(
             $("<option></option>").attr("value", value).text(value)
           );
+          // console.log(mainElment);
         });
       };
 
@@ -497,12 +505,34 @@
           const { data } = await makeRequest(
             `https://us-central1-homeguruji-3edb8.cloudfunctions.net/getAllData`
           );
+
+    
           // console.log({ data });
           let subject = $("#subject");
           let dates = $("#date");
+         
           let timeslot = $("#timeslot");
+          
           appendData(subject, data.subjects);
-          appendData(dates, data.dates);
+
+         
+        const myDateArry =[]
+        let date = data.dates.forEach((date)=>{
+          const d = new Date(date);
+            const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d);
+             const mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(d);
+             const da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d);
+             const dateFormate =`${da}-${mo}-${ye}`
+            myDateArry.push(dateFormate)
+            //  date.innerText =`${da}-${mo}-${ye}`
+           
+             console.log(`${da}-${mo}-${ye}`);
+
+         
+      
+        })
+        appendData(dates, myDateArry);
+        console.log(date)
 
           data.timeslots.forEach((value) => {
             timeslot.append(
