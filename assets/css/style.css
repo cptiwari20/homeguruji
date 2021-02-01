@@ -1707,10 +1707,19 @@ section {
 .testimonials .btn:hover {
   background-color: rgba(0, 0, 0, 0.747);
 }
-
+@media (max-width: 975px) {
+  .width {
+    height: 55vh;
+  }
+}
+@media (max-width: 768px) {
+  .width {
+    height: 47vh;
+  }
+}
 @media (max-width: 525px) {
   .width {
-    height: 60vh;
+    height: 45vh;
   }
 }
 .homeguruji-experience .row {
@@ -1847,6 +1856,6 @@ section {
   font-weight: 600;
 }
 .privacy-policy {
-  background-color: #cbd4cf;
+  background-color: white;
   padding: 3rem;
 }
