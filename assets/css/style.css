@@ -1714,7 +1714,7 @@ section {
 }
 @media (max-width: 768px) {
   .width {
-    height: 47vh;
+    height: 45vh;
   }
 }
 @media (max-width: 525px) {
@@ -1857,5 +1857,5 @@ section {
 }
 .privacy-policy {
   background-color: white;
-  padding: 3rem;
+  padding: 5rem 3rem;
 }
